@@ -45,7 +45,7 @@ jobs:
           #   os: windows-2022-16-cores
           #   features: ""
           #   file_name: openobserve-${{ github.ref_name }}-windows-amd64
-            file_ext: .zip
+          #  file_ext: .zip
     runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout sources

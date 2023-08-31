@@ -31,20 +31,20 @@ jobs:
             features: "--features mimalloc"
             file_name: openobserve-${{ github.ref_name }}-linux-arm64
             file_ext: .tar.gz
-          - arch: x86_64-apple-darwin
-            os: macos-latest
-            features: ""
-            file_name: openobserve-${{ github.ref_name }}-darwin-amd64
-            file_ext: .tar.gz
-          - arch: aarch64-apple-darwin
-            os: macos-latest
-            features: ""
-            file_name: openobserve-${{ github.ref_name }}-darwin-arm64
-            file_ext: .tar.gz
-          - arch: x86_64-pc-windows-msvc
-            os: windows-2022-16-cores
-            features: ""
-            file_name: openobserve-${{ github.ref_name }}-windows-amd64
+          # - arch: x86_64-apple-darwin
+          #   os: macos-latest
+          #   features: ""
+          #   file_name: openobserve-${{ github.ref_name }}-darwin-amd64
+          #   file_ext: .tar.gz
+          # - arch: aarch64-apple-darwin
+          #   os: macos-latest
+          #   features: ""
+          #   file_name: openobserve-${{ github.ref_name }}-darwin-arm64
+          #   file_ext: .tar.gz
+          # - arch: x86_64-pc-windows-msvc
+          #   os: windows-2022-16-cores
+          #   features: ""
+          #   file_name: openobserve-${{ github.ref_name }}-windows-amd64
             file_ext: .zip
     runs-on: ${{ matrix.os }}
     steps:
